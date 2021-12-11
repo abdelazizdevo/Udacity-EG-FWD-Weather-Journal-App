@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>WeatherGeek - Comprehensive Weather Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- Main Css -->
+    <link href="style.css" rel="stylesheet" type="text/css" id="theme-opt">
+</head>
+
+<body>
+<section class="bg-half-170 bg-light d-table w-100" style="min-height: 100vh;">
+    <div class="container">
+        <div class="row align-items-center mt-5">
+            <div class="col-xl-8 col-lg-7 col-md-6">
+                <div class="title-heading">
+                    <h4 class="heading my-3">Comprehensive Weather Data, <br>in One Click</h4>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-5 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                <div class="card shadow rounded border-0 ms-lg-4">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Enter Data Here</h5>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <label class="form-label">Zip Code <span class="text-danger">*</span></label>
+                                    <input type="text" id="zip" placeholder="enter zip code here" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <label class="form-label">Your Feelings</label>
+                                    <textarea class="form-control" id="feelings" placeholder="Enter Your Feelings Here"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="d-grid">
+                                    <button class="btn btn-primary" id="generate" type="button">Generate</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="features-results mt-5" id="entryHolder">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card features feature-clean explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center">
+                                <div class="icons text-primary text-center mx-auto">
+                                    <i class="uil uil-airplay d-block rounded h3 mb-0"><img src="images/date.svg" width="30"></i>
+                                </div>
+
+                                <div class="card-body p-0 content">
+                                    <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Today's date</a></h5>
+                                    <h3 class="title text-dark" id="date"></h3>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+
+                        <div class="col-lg-4 col-md-6 col-12 mt-4 mt-md-0 pt-2 pt-md-0">
+                            <div class="card features feature-clean explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center">
+                                <div class="icons text-primary text-center mx-auto">
+                                    <i class="uil uil-clipboard-alt d-block rounded h3 mb-0"><img src="images/temp.svg" width="30"></i>
+                                </div>
+
+                                <div class="card-body p-0 content">
+                                    <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Temperature Right Now</a></h5>
+                                    <h3 class="title text-dark" id="temp"></h3>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+
+                        <div class="col-lg-4 col-md-6 col-12 mt-4 mt-lg-0 pt-2 pt-lg-0">
+                            <div class="card features feature-clean explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center">
+                                <div class="icons text-primary text-center mx-auto">
+                                    <i class="uil uil-credit-card-search d-block rounded h3 mb-0"><img src="images/feelings.svg" width="30"></i>
+                                </div>
+
+                                <div class="card-body p-0 content">
+                                    <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Your Feelings</a></h5>
+                                    <h3 class="title text-dark" id="content"></h3>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+                    </div>
+                </div>
+            </div>
+        </div><!--end row-->
+    </div>
+</section><!--end section-->
+<!-- javascript -->
+<script src="app.js"></script>
+</body>
+</html>
